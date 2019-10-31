@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="styleshseet" type="text/css">
 
     <title>Cow Q's</title>
 </head>
@@ -19,23 +20,30 @@
         </div>
 </div>
 
-<div class="container">
+<div class="container content">
     <div class="information">
         <div class="text-center timer-div">
             <p class="timeLeft"> Time Remaining: <span id="time"></span></p>
         </div>
-        <div class="question"></div>
-        <div class="answers"> </div>
-        
+        <div class="text-center qSpace">questions</div>
+        <div class="text-center aSpace">answer choices</div>
         <div class="submitButton text-center">
             <button type="button" id="subbtn" class= "btn btn-lrg btn-secondary" >Submit</button>
         </div>
     </div>
+    <div class="results text-center">
+        <div id="correct">correct</div>
+        <div id="incorrect">incorrect</div>
+        <div id="unanswered">unanswered</div>
+        <div id="restart">
+            <button type="button" id="restartbtn" class="btn btn-secondary">Try Again</button>
+        </div>
+    </div>
 </div>
 
-<footer>
-    <img src="https://media.giphy.com/media/PQdxTeUixyFvq/giphy.gif" alt="cow gif">
-    <img src="https://media.giphy.com/media/EqsdRW5IXwoda/source.gif" alt="cow gif">
+<footer class="footer">
+    <img src="https://media.giphy.com/media/PQdxTeUixyFvq/giphy.gif" alt="cow gif" width="100px">
+    <p>By: Jonathan Johnson</p>
 </footer>
 
 <!-- jQuery, Popper.js, B JS -->
