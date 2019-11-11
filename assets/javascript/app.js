@@ -7,8 +7,7 @@ $("#startButton").on("click", startTimer);
 let correct = 0;
 let incorrect = 0; 
 let unanswered = 0;
-
-let timeLeft = 120;
+let timeLeft = 10;
 function startTimer (){
      $("#time").text(timeLeft + " seconds");
      setInterval(countdown, 1000);
@@ -25,7 +24,7 @@ function countdown (){
      stopTimer();
      $("#time").empty();
      endDisplay();
- }
+    }  
  };
 function stopTimer (){
     clearInterval();
@@ -51,7 +50,7 @@ function stopTimer (){
  };
 
  function checkAnswers (){
-
+    
  };
 
 
